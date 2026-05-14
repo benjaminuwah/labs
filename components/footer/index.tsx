@@ -61,9 +61,9 @@ export default function Footer() {
             </div>
             <div className="flex gap-4 pt-2">
               <LiaLinkedin className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />
-              <BsTwitter className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />
-              <BsYoutube className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />
-              <BsInstagram className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />
+              {/*<BsTwitter className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
+              {/*<BsYoutube className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
+              {/*<BsInstagram className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
             </div>
           </div>
       </footer>
