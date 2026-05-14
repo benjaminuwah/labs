@@ -17,7 +17,7 @@
   --color-graphite-gray: Var(--graphite-gray);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --background: #fff;
     --foreground: #ededed;
@@ -26,7 +26,7 @@
     --graphite-gray: #2D3742;
 
   }
-}
+} */
 
 body {
   background: var(--background);

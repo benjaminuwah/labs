@@ -29,7 +29,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
         className={`text-lg flex font-medium duration-300 uppercase ${
           path === item.href
             ? "text-defence-gold border-b "
-            : " text-white  hover:text-primary"
+            : " text-deep-navy  hover:text-primary"
         }`}
       >
         {item.label}

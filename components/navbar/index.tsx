@@ -36,7 +36,7 @@ export default function Navbar() {
         setNavbarOpen(false);
       }
     },
-    [navbarOpen]
+    [navbarOpen],
   );
 
   useEffect(() => {
@@ -50,24 +50,24 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`bg-deep-navy sticky top-0 z-20 w-full transition-all duration-300 py-2 ${
+        className={`bg-white sticky top-0 z-20 w-full transition-all duration-300 ${
           sticky ? "shadow-lg" : "shadow-none bg-deep-navy"
         }`}
       >
         <div>
-          <div className="container flex items-center justify-between my-4">
+          <div className="container flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2">
               <Image
                 src={logo3}
                 alt="logo"
                 width={200}
                 height={200}
-                className="h-auto w-20"
+                className="h-auto w-30 md:w-40"
               />
             </Link>
 
             <div className="flex items-center gap-2 lg:gap-10">
-              <nav className="hidden lg:flex grow items-center gap-4 xl:gap-6 justify-center text-white">
+              <nav className="hidden lg:flex grow items-center gap-4 xl:gap-6 justify-center text-deep-navy">
                 {navLinks.map((item, index) => (
                   <HeaderLink key={index} item={item} />
                 ))}
@@ -85,9 +85,9 @@ export default function Navbar() {
                 className="block lg:hidden p-2 rounded-lg"
                 aria-label="Toggle mobile menu"
               >
-                <span className="block w-6 h-0.5 bg-white"></span>
-                <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
-                <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
+                <span className="block w-6 h-0.5 bg-black"></span>
+                <span className="block w-6 h-0.5 bg-black mt-1.5"></span>
+                <span className="block w-6 h-0.5 bg-black mt-1.5"></span>
               </button>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between gap-2 p-4">
               <button
                 onClick={() => setNavbarOpen(false)}
-                className="hover:cursor-pointer"
+                className="hover:cursor-pointer text-black"
                 aria-label="Close menu Modal"
               >
                 {/* <Icon

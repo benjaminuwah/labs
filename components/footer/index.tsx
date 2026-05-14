@@ -57,13 +57,13 @@ export default function Footer() {
               ABUJA: Plot 414, Katampe Close, Katampe, Abuja, Nigeria.
             </span>
           </div> */}
-          <div className="flex items-center justify-center gap-10">
+          <div className="flex flex-col md:flex-row items-center justify-center md:gap-10">
             <Phone className="h-4 w-4 text-defence-gold" />
             <span> Turkey: +90 5333 258 840</span>
             <span> United Kingdom: +44 7511 581 476</span>
             <span> Nigeria: +234 903 0420 993</span>
           </div>
-          <div className="flex gap-4 justify-center">
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
             <div className="flex items-center justify-center gap-2">
               <Mail className="h-4 w-4 text-defence-gold" />
               <span>info@labdefencesolutions.com</span>
