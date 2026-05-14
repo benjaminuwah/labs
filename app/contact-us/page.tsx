@@ -156,27 +156,15 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    const formDataToSend = new FormData();
-
-    Object.entries(formData).forEach(([key, value]) => {
-      formDataToSend.append(key, value);
-    });
-
-    formDataToSend.append("_replyto", formData.email);
-    formDataToSend.append("_subject", "New Contact Form Submission");
-    formDataToSend.append("_template", "table");
-
     try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/uwah23@gmail.com",
-        {
-          method: "POST",
-          body: formDataToSend,
-          headers: {
-            Accept: "application/json",
-          },
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-      );
+        body: JSON.stringify(formData),
+      });
 
       const data = await response.json();
 
