@@ -26,7 +26,7 @@ const Contact = () => {
                     <p className="mb-1 text-sm uppercase tracking-wider text-defence-gold">
                       Address
                     </p>
-                    <p>ANKARA: </p>
+                    {/* <p>ANKARA: </p> */}
                     <p>
                       ABUJA: Plot 414, Katampe Close, Katampe, Abuja, Nigeria.
                     </p>
