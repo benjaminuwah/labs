@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Phone, MapPin, Mail } from "lucide-react";
+import { Phone, /* MapPin, */ Mail, Globe } from "lucide-react";
 // import { LiaLinkedin } from "react-icons/lia";
 import { useRouter } from "next/navigation";
 
@@ -50,13 +50,13 @@ export default function Footer() {
       {/* Main Footer Section */}
       <footer className="bg-deep-navy text-gray-300 py-10 px-8">
         <div className="container mx-auto flex flex-col justify-center gap-4">
-          <div className="flex flex-col items-center justify-center gap-2">
+          {/* <div className="flex flex-col items-center justify-center gap-2">
             <MapPin className="mt-0.5 h-4 w-4 text-defence-gold" />
             <span>ANKARA: </span>
             <span>
               ABUJA: Plot 414, Katampe Close, Katampe, Abuja, Nigeria.
             </span>
-          </div>
+          </div> */}
           <div className="flex items-center justify-center gap-10">
             <Phone className="h-4 w-4 text-defence-gold" />
             <span> Turkey: +90 5333 258 840</span>
@@ -65,7 +65,11 @@ export default function Footer() {
           </div>
           <div className="flex items-center justify-center gap-2">
             <Mail className="h-4 w-4 text-defence-gold" />
-            <span>info@labdefence.com</span>
+            <span>info@labdefencesolution.com</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Globe className="h-4 w-4 text-defence-gold" />
+            <span>www.labdefencesolution.com</span>
           </div>
           <div className="flex gap-4 pt-2">
             {/* <LiaLinkedin className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" /> */}
