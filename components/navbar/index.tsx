@@ -12,7 +12,7 @@ const navLinks = [
   { id: 2, label: "About Us", href: "#about" },
   { id: 2, label: "Capabilities", href: "#capabilities" },
   // { id: 2, label: "Solutions", href: "#solutions" },
-  { id: 2, label: "OEM & Partners", href: "#partners" },
+  // { id: 2, label: "OEM & Partners", href: "#partners" },
   // { id: 2, label: "News", href: "#news" },
   // { id: 2, label: "Contact", href: "#contact-us" },
 ];
