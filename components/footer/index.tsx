@@ -63,13 +63,15 @@ export default function Footer() {
             <span> United Kingdom: +44 7511 581 476</span>
             <span> Nigeria: +234 903 0420 993</span>
           </div>
-          <div className="flex items-center justify-center gap-2">
-            <Mail className="h-4 w-4 text-defence-gold" />
-            <span>info@labdefencesolution.com</span>
-          </div>
-          <div className="flex items-center justify-center gap-2">
-            <Globe className="h-4 w-4 text-defence-gold" />
-            <span>www.labdefencesolution.com</span>
+          <div className="flex gap-4 justify-center">
+            <div className="flex items-center justify-center gap-2">
+              <Mail className="h-4 w-4 text-defence-gold" />
+              <span>info@labdefencesolution.com</span>
+            </div>
+            <div className="flex items-center justify-center gap-2">
+              <Globe className="h-4 w-4 text-defence-gold" />
+              <span>www.labdefencesolution.com</span>
+            </div>
           </div>
           <div className="flex gap-4 pt-2">
             {/* <LiaLinkedin className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" /> */}
