@@ -1,4 +1,9 @@
-import { AboutComponent, Hero, Capabilities, Partners } from "@/components/layouts";
+import {
+  AboutComponent,
+  Hero,
+  Capabilities,
+  // Partners,
+} from "@/components/layouts";
 
 export default function Home() {
   return (
@@ -7,7 +12,7 @@ export default function Home() {
         <Hero />
         <AboutComponent />
         <Capabilities />
-        <Partners />
+        {/* <Partners /> */}
       </div>
     </>
   );

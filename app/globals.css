@@ -17,9 +17,9 @@
   --color-graphite-gray: Var(--graphite-gray);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #830404;
+    --background: #fff;
     --foreground: #ededed;
     --deep-navy: #071827;
     --defence-gold: #C49A43;

@@ -26,19 +26,20 @@ const Contact = () => {
                     <p className="mb-1 text-sm uppercase tracking-wider text-defence-gold">
                       Address
                     </p>
-                    <p>Plot 414, Katampe Close, Katampe, Abuja, Nigeria.
+                    <p>ANKARA: </p>
+                    <p>
+                      ABUJA: Plot 414, Katampe Close, Katampe, Abuja, Nigeria.
                     </p>
                   </div>
-
                   <div>
                     <p className="mb-1 text-sm uppercase tracking-wider text-defence-gold">
                       Phone
                     </p>
-                    <a
-                      href="tel:+44(0)2046187334"
-                      className="hover:text-defence-gold transition-colors"
-                    >
-                      +44 (0) 2046 187 334                    </a>
+                    <div className="flex flex-col justify-center">
+                      <span> Turkey: +90 5333 258 840</span>
+                      <span> United Kingdom: +44 7511 581 476</span>
+                      <span> Nigeria: +234 903 0420 993</span>
+                    </div>
                   </div>
 
                   <div>

@@ -2,18 +2,20 @@
 
 import React from "react";
 import { Phone, MapPin, Mail } from "lucide-react";
-import { LiaLinkedin } from "react-icons/lia";
+// import { LiaLinkedin } from "react-icons/lia";
 import { useRouter } from "next/navigation";
 
 export default function Footer() {
-    const router = useRouter();
+  const router = useRouter();
   return (
     <>
       {/* Top Section */}
       <section className="bg-deep-navy text-white py-12 px-8 border-b border-gray-700">
         <div className="container mx-auto md:px-40 md:flex flex-col lg:flex-row items-center justify-between">
           <div className="text-left mb-8 lg:mb-0">
-            <h2 className="text-2xl md:text-3xl font-bold mb-2">FOR A SECURE FUTURE,</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+              FOR A SECURE FUTURE,
+            </h2>
             <h2 className="text-2xl md:text-3xl font-bold text-defence-gold">
               THE RIGHT SOLUTIONS PARTNER.
             </h2>
@@ -24,7 +26,10 @@ export default function Footer() {
               to your operational needs.
             </p>
           </div>
-          <button onClick={() => router.push("/contact-us")} className="bg-defence-gold text-white px-8 py-3 rounded-lg flex items-center space-x-2 hover:bg-defence-gold/80 transition-colors">
+          <button
+            onClick={() => router.push("/contact-us")}
+            className="bg-defence-gold text-white px-8 py-3 rounded-lg flex items-center space-x-2 hover:bg-defence-gold/80 transition-colors"
+          >
             <span>GET IN TOUCH</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -44,28 +49,31 @@ export default function Footer() {
 
       {/* Main Footer Section */}
       <footer className="bg-deep-navy text-gray-300 py-10 px-8">
-        <div className="container mx-auto flex flex-col md:flex-row justify-center gap-8">
-            <div className="flex justify-center gap-2">
-              <MapPin className="mt-0.5 h-4 w-4 text-defence-gold" />
-              <span>
-                Address: Plot 414, Katampe Close, Katampe, Abuja, Nigeria.
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-defence-gold" />
-              <span> +44 (0) 2046 187 334</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-defence-gold" />
-              <span>info@labdefence.com</span>
-            </div>
-            <div className="flex gap-4 pt-2">
-              <LiaLinkedin className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />
-              {/*<BsTwitter className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
-              {/*<BsYoutube className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
-              {/*<BsInstagram className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
-            </div>
+        <div className="container mx-auto flex flex-col justify-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <MapPin className="mt-0.5 h-4 w-4 text-defence-gold" />
+            <span>ANKARA: </span>
+            <span>
+              ABUJA: Plot 414, Katampe Close, Katampe, Abuja, Nigeria.
+            </span>
           </div>
+          <div className="flex items-center justify-center gap-10">
+            <Phone className="h-4 w-4 text-defence-gold" />
+            <span> Turkey: +90 5333 258 840</span>
+            <span> United Kingdom: +44 7511 581 476</span>
+            <span> Nigeria: +234 903 0420 993</span>
+          </div>
+          <div className="flex items-center justify-center gap-2">
+            <Mail className="h-4 w-4 text-defence-gold" />
+            <span>info@labdefence.com</span>
+          </div>
+          <div className="flex gap-4 pt-2">
+            {/* <LiaLinkedin className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" /> */}
+            {/*<BsTwitter className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
+            {/*<BsYoutube className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
+            {/*<BsInstagram className="h-5 w-5 cursor-pointer hover:text-defence-gold transition-colors" />*/}
+          </div>
+        </div>
       </footer>
 
       {/* Bottom Section */}

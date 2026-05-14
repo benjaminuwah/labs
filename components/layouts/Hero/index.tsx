@@ -34,10 +34,7 @@ const Hero = () => {
         </motion.div>
 
         <div className="container z-10 relative">
-          <motion.div
-            style={{ opacity }}
-            className="space-y-5"
-          >
+          <motion.div style={{ opacity }} className="space-y-5">
             <h1
               className="md:text-7xl text-5xl font-bold text-white uppercase"
               // initial={{ opacity: 0, y: 30 }}
@@ -58,11 +55,11 @@ const Hero = () => {
               // initial={{ opacity: 0, y: 40 }}
               // animate={{ opacity: 1, y: 0 }}
               // transition={{ delay: 0.6, duration: 0.8 }}
-              className="text-white text-xl md:text-2xl font-normal mb-10 lg:text-start"
+              className="text-white text-xl md:text-3xl w-4xl font-normal mb-10 lg:text-start"
             >
-              Lab Defence Solutions provides integrated defence, <br /> security
-              and technology solutions for government <br /> institutions and
-              defence organizations.
+              Lab Defence Solutions provides integrated defence, security and
+              technology solutions for government institutions and defence
+              organizations.
             </p>
             <div>
               <Link
