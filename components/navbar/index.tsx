@@ -56,7 +56,7 @@ export default function Navbar() {
       >
         <div>
           <div className="container flex items-center justify-between my-4">
-            <div>
+            <Link href="/" className="flex items-center gap-2">
               <Image
                 src={logo3}
                 alt="logo"
@@ -64,7 +64,7 @@ export default function Navbar() {
                 height={200}
                 className="h-auto w-20"
               />
-            </div>
+            </Link>
 
             <div className="flex items-center gap-2 lg:gap-10">
               <nav className="hidden lg:flex grow items-center gap-4 xl:gap-6 justify-center text-white">

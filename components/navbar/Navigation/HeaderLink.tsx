@@ -54,8 +54,6 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
       {submenuOpen && (
         <div
           className={`absolute py-2 left-0 mt-0.5 w-60 bg-white shadow-lg rounded-lg `}
-          data-aos="fade-up"
-          data-aos-duration="500"
         >
           {item.submenu?.map((subItem, index) => (
             <Link
@@ -64,7 +62,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
               className={`block px-4 py-2   ${
                 path === subItem.href
                   ? "bg-primary text-white"
-                  : "text-white dark:text-white hover:bg-primary"
+                  : "text-gray-700 hover:bg-gray-100"
               }`}
             >
               {subItem.label}

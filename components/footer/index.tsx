@@ -1,12 +1,12 @@
+"use client";
+
 import React from "react";
 import { Phone, MapPin, Mail } from "lucide-react";
 import { LiaLinkedin } from "react-icons/lia";
-import { BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
-import Image from "next/image";
-import { logo, logo2, logo3 } from "@/public/images/logo";
-import maps from "@/public/images/covers/map2.png"
+import { useRouter } from "next/navigation";
 
 export default function Footer() {
+    const router = useRouter();
   return (
     <>
       {/* Top Section */}
@@ -24,7 +24,7 @@ export default function Footer() {
               to your operational needs.
             </p>
           </div>
-          <button className="bg-defence-gold text-white px-8 py-3 rounded-lg flex items-center space-x-2 hover:bg-defence-gold/80 transition-colors">
+          <button onClick={() => router.push("/contact-us")} className="bg-defence-gold text-white px-8 py-3 rounded-lg flex items-center space-x-2 hover:bg-defence-gold/80 transition-colors">
             <span>GET IN TOUCH</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
