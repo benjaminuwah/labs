@@ -66,11 +66,11 @@ export default function Footer() {
           <div className="flex gap-4 justify-center">
             <div className="flex items-center justify-center gap-2">
               <Mail className="h-4 w-4 text-defence-gold" />
-              <span>info@labdefencesolution.com</span>
+              <span>info@labdefencesolutions.com</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <Globe className="h-4 w-4 text-defence-gold" />
-              <span>www.labdefencesolution.com</span>
+              <span>www.labdefencesolutions.com</span>
             </div>
           </div>
           <div className="flex gap-4 pt-2">

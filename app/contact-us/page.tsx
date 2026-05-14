@@ -47,11 +47,11 @@ const Contact = () => {
                       Email
                     </p>
                     <a
-                      href="mailto:info@labdefencesolution.com
+                      href="mailto:info@labdefencesolutions.com
 "
                       className="hover:text-defence-gold transition-colors"
                     >
-                      info@labdefencesolution.com
+                      info@labdefencesolutions.com
                     </a>
                   </div>
                 </div>
