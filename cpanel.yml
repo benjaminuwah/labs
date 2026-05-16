@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export APPPATH=/home/starfulbank/starfulbank
+    - /bin/cp -R * $APPPATH
+    - cd $APPPATH
+    - npm install
+    - npm run build
+
+# this is for all cpanel deployment state
